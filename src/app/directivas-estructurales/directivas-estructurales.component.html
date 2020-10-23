@@ -1,0 +1,25 @@
+<div class="container" style="margin: 2.5% 0 0 0;">
+  <div class="row">
+    <h3>Agregar elementos a una lista de Arrays con *ngFor</h3>
+    <div class="input-group"  >
+      <div class="input-group-prepend">
+        <span class="input-group-text">Agregar otro nombre/Elemento</span>
+      </div>
+      <input type="text" (keydown.enter)="addNombre()"  aria-label="Escribe un nombre" class="form-control" [(ngModel)]="nuevoNombre">
+    </div>
+
+    <div class="input-group">
+      <ul>
+        <li *ngFor="let item of lista" (click)="alertNombre(item)" >{{ item }}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="input-group">
+    <p class="lead">Elemento clickeado: </p>
+    <span class="lead"> {{ mostrarNombre}}</span>
+  </div>
+
+  
+
+</div>
