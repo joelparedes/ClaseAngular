@@ -9,4 +9,21 @@
           <p>{{getBio()}}</p>
       </div>
   </div>
+  <hr>
+  
+  <div class="row" style="margin: 30px;">
+    <h4>TAREA 1: two ways binding</h4>
+    
+      <div class="col-12">
+        <h3>Dime tu nombre</h3>
+        <input type="text" [(ngModel)]="txtNombre" id="txtNombre" class="form-control" placeholder="Escribe tu nombre">
+        <p>{{ txtNombre }}</p>
+      </div>
+    <div class="col-12">
+        <h3>Escribe algo sobre ti</h3>
+        <input type="text" [(ngModel)]="txtBio" id="txtBio" class="form-control" placeholder="Escribe tu bio" >
+        <p>{{ txtBio }}</p>
+      </div>
+  </div>
+
 </div>

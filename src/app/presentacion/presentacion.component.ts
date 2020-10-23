@@ -10,6 +10,11 @@ export class PresentacionComponent implements OnInit {
   public nombre: string = 'Joel E. Paredes Abreu';
   public bio: string = 'Responsabilidad, liderazgo, honestidad son unas de mis cualidades laborales. Soy una persona con alta capacidad de aprendizaje y competencias como trabajo en equipo, buena comunicación, capacidad de análisis para resolver problemas, y habilidad para trabajar con nuevas tecnologías';
 
+  //Two ways binding
+
+  public txtNombre: string = "";
+  public txtBio: string = "";
+
   constructor() { }
 
   ngOnInit() {
